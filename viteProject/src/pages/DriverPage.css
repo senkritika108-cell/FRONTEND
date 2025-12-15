@@ -1,0 +1,98 @@
+/* Full-page gradient background */
+.driver-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4A90E2, #9013FE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Glassmorphism card */
+.driver-card {
+    width: 420px;
+    padding: 35px;
+    border-radius: 20px;
+    backdrop-filter: blur(18px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.driver-title {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Subtitle */
+.driver-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #f1eaff;
+    margin-bottom: 25px;
+}
+
+/* Form item label */
+.ant-form-item-label > label {
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Input + Select glass style */
+.ant-input,
+.ant-select-selector {
+    background: rgba(255, 255, 255, 0.25) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: white !important;
+}
+
+.ant-input::placeholder {
+    color: #e9dfff !important;
+}
+
+/* Dropdown styling */
+.ant-select-arrow {
+    color: white !important;
+}
+
+.ant-select-dropdown {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Stylish Button */
+.driver-btn {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #FF8A00, #E52E71);
+    border: none;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 5px 20px rgba(229, 46, 113, 0.4);
+    transition: 0.3s ease-in-out;
+}
+
+.driver-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(229, 46, 113, 0.6);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,130 @@
+:root{
+  --bg: #f7fbff;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #00a46c;
+  --accent-dark: #008254;
+  --text: #0b2545;
+  --glass: rgba(255,255,255,0.7);
+  --shadow: 0 8px 24px rgba(11,37,73,0.06);
+  --radius: 12px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg),#ffffff);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+.hc-container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:20px;
+}
+
+/* Header */
+.hc-header{
+  background:transparent;
+  position:sticky;
+  top:0;
+  z-index:40;
+    box-shadow:0 2px 4px rgba(0,0,0,0.04);
+}
+.hc-header .hc-container{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+.logo{
+  font-weight:800;
+  color:var(--text);
+  text-decoration:none;
+  font-size:20px;
+}
+.top-nav{margin-left:auto; display:flex; gap:12px; align-items:center;}
+.top-nav a{ color:var(--muted); text-decoration:none; padding:8px 10px; border-radius:8px; }
+.top-nav a.active, .top-nav a:hover{ background:var(--glass); color:var(--text); }
+
+/* Hero */
+.hero{ padding:34px 0; text-align:center; }
+.hero .lead{ color:var(--muted); margin-top:6px; margin-bottom:18px; }
+.search-form{ display:inline-flex; gap:8px; width:100%; max-width:740px; justify-content:center; }
+.search-form input[type="search"]{
+  width:70%;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #e6eef8;
+  outline:none;
+  font-size:15px;
+  box-shadow:0 4px 18px rgba(16,24,40,0.04);
+}
+.search-form button{
+  padding:12px 18px;
+  border-radius:10px;
+  border:none;
+  background:var(--accent);
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+}
+.quick-links{ margin-top:14px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+.ql{ display:inline-block; text-decoration:none; padding:8px 12px; background:#fff; border-radius:10px; color:var(--text); box-shadow:var(--shadow); }
+
+/* FAQ grid */
+.hc-section{ padding:26px 0; }
+.faq-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:14px; }
+.faq-card{ background:var(--card); padding:16px; border-radius:12px; box-shadow:var(--shadow); }
+.faq-card h3{ margin:0 0 8px 0; font-size:16px; }
+.faq-card p{ margin:0 0 10px 0; color:var(--muted); }
+.faq-card .more{ text-decoration:none; color:var(--accent); font-weight:600; }
+
+/* Accordion */
+.accordion{ margin-top:14px; display:block; }
+.acc-toggle{
+  width:100%;
+  text-align:left;
+  padding:14px 16px;
+  border:none;
+  background:var(--card);
+  border-radius:10px;
+  margin-bottom:8px;
+  font-size:15px;
+  cursor:pointer;
+  box-shadow:var(--shadow);
+}
+.acc-toggle.open{ background:#f1fbf6; color:var(--accent-dark); }
+.acc-panel{ overflow:hidden; transition: max-height 0.25s ease; background:transparent; padding:0 16px; max-height:0; }
+.acc-panel p{ margin:12px 0 18px 0; color:var(--muted); }
+
+/* Contact */
+.contact-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:16px; }
+.contact-card{ background:var(--card); padding:16px; border-radius:12px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:10px; }
+.contact-card h3{ margin:0; }
+.contact-card p{ margin:0; color:var(--muted); }
+.btn{ display:inline-block; text-decoration:none; padding:8px 12px; border-radius:8px; background:var(--accent); color:white; font-weight:700; }
+
+/* Safety */
+.safety{ background:linear-gradient(90deg, #f3fff7, #fff); padding:18px; border-radius:12px; margin-top:12px; }
+
+/* Footer */
+.hc-footer{ margin-top:26px; padding:18px 0; border-top:1px solid #eef3fb; }
+.footer-left{ display:flex; flex-direction:column; gap:6px; }
+.footer-nav{ margin-left:auto; display:flex; gap:12px; align-items:center; }
+
+/* Responsive */
+@media (max-width:900px){
+  .faq-grid{ grid-template-columns:1fr; }
+  .contact-grid{ grid-template-columns:1fr 1fr; }
+  .search-form input[type="search"]{ width:66%; }
+  .top-nav{ display:none; }
+}
+@media (max-width:520px){
+  .contact-grid{ grid-template-columns:1fr; }
+  .search-form input[type="search"]{ width:60%; }
+  .hero{ padding:20px 10px; }
+}

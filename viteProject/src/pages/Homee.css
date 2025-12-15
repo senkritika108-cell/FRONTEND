@@ -1,0 +1,93 @@
+/* Full page background */
+.homee-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 8%;
+  min-height: 100vh;
+
+  /* BEAUTIFUL GRADIENT BACKGROUND */
+  background: linear-gradient(135deg, #000000, #434343);
+  color: white;
+}
+
+/* LEFT SECTION */
+.homee-left {
+  max-width: 45%;
+}
+
+.homee-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.homee-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #d1d1d1;
+}
+
+/* INPUTS */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.homee-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  color: #000;
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+/* BUTTONS */
+.homee-btn-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.homee-btn {
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+}
+
+.homee-btn.black {
+  background: #ffffff;
+  color: black;
+}
+
+.homee-btn.black:hover {
+  background: #e5e5e5;
+}
+
+.homee-btn.gray {
+  background: #6f6f6f;
+  color: white;
+}
+
+.homee-btn.gray:hover {
+  background: #5a5a5a;
+}
+
+/* RIGHT IMAGE */
+.homee-right {
+  max-width: 48%;
+}
+
+.homee-image {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.1);
+}
