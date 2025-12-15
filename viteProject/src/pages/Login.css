@@ -7,8 +7,8 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-   /* background: url("https://images.pexels.com/photos/30882616/pexels-photo-30882616.jpeg") no-repeat center center/cover;
-} */
+   background: url("https://images.pexels.com/photos/30882616/pexels-photo-30882616.jpeg") no-repeat center center/cover;
+} 
 
 /* Login box with glass + shadow */
 .login-box {
