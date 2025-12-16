@@ -13,7 +13,7 @@ const Homee = () => {
           </h1>
 
           <p className="homee-subtitle">
-            Choose your ride, apply offers, and travel comfortably anytime.
+            Choose your ride, apply offers, and travel comfortably no time.
           </p>
 
           {/* NEW INPUTS */}
