@@ -9,7 +9,7 @@ const Homee = () => {
         {/* LEFT SECTION */}
         <div className="homee-left">
           <h1 className="homee-title">
-            Move the Way You Want<br />with zomato
+            Move the Way You Want<br />with zomato dslkdsklfsdlfjsdfdsfds
           </h1>
 
           <p className="homee-subtitle">
