@@ -10,10 +10,11 @@ const Homee = () => {
         <div className="homee-left">
           <h1 className="homee-title">
             Move the Way You Want<br />with zomato dslkdsklfsdlfjsdfdsfds
+            Move the Way You Want<br />with Uber kjhkjhkjhkj
           </h1>
 
           <p className="homee-subtitle">
-            Choose your ride, apply offers, and travel comfortably no time.
+            Choose your ride, apply offers, and travel comfortably no time.sfdsfdsf
           </p>
 
           {/* NEW INPUTS */}
@@ -23,7 +24,7 @@ const Homee = () => {
               <option>Uber Go</option>
               <option>Uber Auto</option>
               <option>Uber Moto</option>
-              <option>Uber Premier</option>
+              <option>Uber Premdsdsdier</option>
             </select>
           </div>
 
